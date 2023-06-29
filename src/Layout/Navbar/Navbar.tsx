@@ -1,7 +1,9 @@
+import './navbar.css';
+
 const Navbar: React.FC = () => {
 
   return (
-    <div>
+    <div className='navbar__container'>
       Navbar
     </div>
   )
