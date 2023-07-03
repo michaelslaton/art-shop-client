@@ -1,0 +1,1 @@
+A simulated online store front for digital art.
