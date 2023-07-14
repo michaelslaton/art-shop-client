@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./navbar/Navbar";
 import HomePage from "./home-page/HomePage";
 import Error404 from "../utils/error404/Error404";
@@ -10,12 +10,12 @@ const Layout: React.FC = () => {
     <div className="main-screen">
       <div className="main-container">
         <Navbar/>
-        <BrowserRouter>
+        <Router>
           <Routes>
             <Route path="/" element={<HomePage/>}/>
             <Route path="*" element={<Error404/>} />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </div>
     </div>
   );
