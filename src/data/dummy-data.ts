@@ -1,3 +1,4 @@
+import Product from "../interfaces/Product";
 import art1 from "../assets/imgs/product (1).png";
 import art2 from "../assets/imgs/product (2).png";
 import art3 from "../assets/imgs/product (3).png";
@@ -16,7 +17,7 @@ import art15 from "../assets/imgs/product (15).png";
 import art16 from "../assets/imgs/product (16).png";
 import art17 from "../assets/imgs/product (17).png";
 
-const dummyData = [
+const dummyData: Product[] = [
   {
     id: 0,
     title: "Fae City",
