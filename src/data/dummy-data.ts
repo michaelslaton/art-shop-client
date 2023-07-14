@@ -1,20 +1,20 @@
-import art1 from '../assets/imgs/product (1).png';
-import art2 from '../assets/imgs/product (2).png';
-import art3 from '../assets/imgs/product (3).png';
-import art4 from '../assets/imgs/product (4).png';
-import art5 from '../assets/imgs/product (5).png';
-import art6 from '../assets/imgs/product (6).png';
-import art7 from '../assets/imgs/product (7).png';
-import art8 from '../assets/imgs/product (8).png';
-import art9 from '../assets/imgs/product (9).png';
-import art10 from '../assets/imgs/product (10).png';
-import art11 from '../assets/imgs/product (11).png';
-import art12 from '../assets/imgs/product (12).png';
-import art13 from '../assets/imgs/product (13).png';
-import art14 from '../assets/imgs/product (14).png';
-import art15 from '../assets/imgs/product (15).png';
-import art16 from '../assets/imgs/product (16).png';
-import art17 from '../assets/imgs/product (17).png';
+import art1 from "../assets/imgs/product (1).png";
+import art2 from "../assets/imgs/product (2).png";
+import art3 from "../assets/imgs/product (3).png";
+import art4 from "../assets/imgs/product (4).png";
+import art5 from "../assets/imgs/product (5).png";
+import art6 from "../assets/imgs/product (6).png";
+import art7 from "../assets/imgs/product (7).png";
+import art8 from "../assets/imgs/product (8).png";
+import art9 from "../assets/imgs/product (9).png";
+import art10 from "../assets/imgs/product (10).png";
+import art11 from "../assets/imgs/product (11).png";
+import art12 from "../assets/imgs/product (12).png";
+import art13 from "../assets/imgs/product (13).png";
+import art14 from "../assets/imgs/product (14).png";
+import art15 from "../assets/imgs/product (15).png";
+import art16 from "../assets/imgs/product (16).png";
+import art17 from "../assets/imgs/product (17).png";
 
 const dummyData = [
   {
@@ -136,6 +136,6 @@ const dummyData = [
     img: art17,
     tags: ["surreal", "snowflake", "macro"]
   },
-]
+];
 
 export default dummyData;

@@ -1,4 +1,4 @@
-import Layout from './Layout/Layout';
+import Layout from "./Layout/Layout";
 
 const App: React.FC = () => {
   return (
@@ -6,6 +6,6 @@ const App: React.FC = () => {
       <Layout/>
     </>
   );
-}
+};
 
 export default App;
