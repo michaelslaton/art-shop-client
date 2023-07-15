@@ -1,9 +1,18 @@
 import "./home-page.css";
 
-const HomePage: React.FC = () => {
+type HomePageProps = {
+  lights: boolean;
+}
+
+const HomePage: React.FC<HomePageProps> = ({ lights }) => {
   return (
     <div className="home-page__container">
-      Test?
+      <div className={`bubble ${lights ? "" : "dark"}`}>
+        Bubble
+      </div>
+      <div className={`bubble small ${lights ? "" : "dark"}`}>
+        Small Bubble
+      </div>
     </div>
   );
 };
