@@ -1,6 +1,30 @@
+@font-face {
+  font-family: "gilroy";
+  src: url("../assets/fonts/gilroy/Gilroy-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroy-extra-bold";
+  src: url("../assets/fonts/gilroy/Gilroy-ExtraBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
- --bg-color--light: #ffffff;
- --bg-color--dark: #000000;
+  /* Light Theme */
+ --bg-color--light: #ececec;
+ --div-color--light: #ffffff;
+ --font-color--light: #6e6d6e;
+
+ /* Dark Theme */
+ --bg-color--dark: #161616;
+ --div-color--dark: #252525;
+ --font-color--dark: #ffffff;
+
+ /* Shapes */
+  --border-radius: 20px;
 }
 
 body {
@@ -12,12 +36,30 @@ img {
 }
 
 .main-screen {
-  width: 100vw;
-  min-height: 100vh;
-}
-
-.main-container {
+  box-sizing: border-box;
+  padding: 1rem;
   background-color: var(--bg-color--light);
   color: var(--bg-color--dark);
-  margin-top: 2rem;
+  font-family: "gilroy";
+  display: grid;
+  grid-template-columns: fit-content(100%) 1fr;
+  min-height: 100vh;
+}
+.main-screen.dark {
+  background-color: var(--bg-color--dark);
+  color: white;
+}
+
+.bubble {
+  border-radius:  var(--border-radius);
+  background-color: var(--div-color--light);
+  padding: 1rem;
+}
+.bubble.dark {
+  background-color: var(--div-color--dark);
+  color: white;
+}
+.bubble.small {
+  margin-top: .5rem;
+  width: fit-content;
 }

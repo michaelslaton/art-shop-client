@@ -21,6 +21,7 @@ const dummyData: Product[] = [
   {
     id: 0,
     title: "Fae City",
+    artist: "",
     description: "A Fae City.",
     img: art1,
     tags: ["fantasy", "city"],
@@ -28,6 +29,7 @@ const dummyData: Product[] = [
   {
     id: 1,
     title: "Strange Cat",
+    artist: "",
     description: "A Strange Cat.",
     img: art2,
     tags: ["fantasy", "animal", "cat"]
@@ -35,6 +37,7 @@ const dummyData: Product[] = [
   {
     id: 2,
     title: "Noble Cat",
+    artist: "",
     description: "A Noble Cat.",
     img: art3,
     tags: ["fantasy", "animal", "cat"]
@@ -42,6 +45,7 @@ const dummyData: Product[] = [
   {
     id: 3,
     title: "A Cat",
+    artist: "",
     description: "A Cat.",
     img: art4,
     tags: ["animal", "cat", "surreal"]
@@ -49,6 +53,7 @@ const dummyData: Product[] = [
   {
     id: 4,
     title: "An Orange Cat",
+    artist: "",
     description: "An orange cat in a Fae forest.",
     img: art5,
     tags: ["fantasy", "animal", "cat"]
@@ -56,6 +61,7 @@ const dummyData: Product[] = [
   {
     id: 5,
     title: "An Cat in Space",
+    artist: "",
     description: "A cat in space.",
     img: art6,
     tags: ["sci-fi", "animal", "cat", "surreal"]
@@ -63,6 +69,7 @@ const dummyData: Product[] = [
   {
     id: 6,
     title: "Alien Lizard",
+    artist: "",
     description: "An alien lizard on a strange planet.",
     img: art7,
     tags: ["sci-fi", "animal", "lizard"]
@@ -70,6 +77,7 @@ const dummyData: Product[] = [
   {
     id: 7,
     title: "A large eyed Alien Lizard",
+    artist: "",
     description: "An alien lizard with large green eyes.",
     img: art8,
     tags: ["surreal", "animal", "lizard"]
@@ -77,6 +85,7 @@ const dummyData: Product[] = [
   {
     id: 8,
     title: "Small lizard",
+    artist: "",
     description: "A small lizard.",
     img: art9,
     tags: ["surreal", "animal", "lizard"]
@@ -84,6 +93,7 @@ const dummyData: Product[] = [
   {
     id: 9,
     title: "Best lizard",
+    artist: "",
     description: "A lizard.",
     img: art10,
     tags: ["surreal", "animal", "lizard"]
@@ -91,6 +101,7 @@ const dummyData: Product[] = [
   {
     id: 10,
     title: "Alien City",
+    artist: "",
     description: "An alien city.",
     img: art11,
     tags: ["sci-fi", "city"]
@@ -98,6 +109,7 @@ const dummyData: Product[] = [
   {
     id: 11,
     title: "Alien World",
+    artist: "",
     description: "An alien city on an alien world.",
     img: art12,
     tags: ["sci-fi", "city"]
@@ -105,6 +117,7 @@ const dummyData: Product[] = [
   {
     id: 12,
     title: "Alien Metropolis",
+    artist: "",
     description: "An alien metropolis.",
     img: art13,
     tags: ["sci-fi", "city"]
@@ -112,6 +125,7 @@ const dummyData: Product[] = [
   {
     id: 13,
     title: "Alien Holy City",
+    artist: "",
     description: "An alien holy city.",
     img: art14,
     tags: ["sci-fi", "city"]
@@ -119,6 +133,7 @@ const dummyData: Product[] = [
   {
     id: 14,
     title: "Alien cityscape",
+    artist: "",
     description: "An alien cityscape on an alien world.",
     img: art15,
     tags: ["sci-fi", "city"]
@@ -126,6 +141,7 @@ const dummyData: Product[] = [
   {
     id: 15,
     title: "A snowflake",
+    artist: "",
     description: "A surreal, macro snowflake.",
     img: art16,
     tags: ["surreal", "snowflake", "macro"]
@@ -133,6 +149,7 @@ const dummyData: Product[] = [
   {
     id: 16,
     title: "Snowflake on fire",
+    artist: "",
     description: "A blazing snowflake.",
     img: art17,
     tags: ["surreal", "snowflake", "macro"]
