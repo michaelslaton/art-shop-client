@@ -1,4 +1,4 @@
-export default interface Product {
+type Product = {
   id: number;
   title: string;
   artist: string;
@@ -6,3 +6,5 @@ export default interface Product {
   img: string;
   tags: string[];
 };
+
+export default Product;

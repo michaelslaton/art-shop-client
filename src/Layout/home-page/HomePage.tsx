@@ -1,3 +1,5 @@
+import Item from "./product/Item";
+import dummyData from "../../data/dummy-data";
 import "./home-page.css";
 
 type HomePageProps = {
@@ -12,6 +14,11 @@ const HomePage: React.FC<HomePageProps> = ({ lights }) => {
       </div>
       <div className={`bubble small ${lights ? "" : "dark"}`}>
         Small Bubble
+      </div>
+      <div>
+        {dummyData.map((product)=>(
+          <Item item={product}/>
+        ))}
       </div>
     </div>
   );

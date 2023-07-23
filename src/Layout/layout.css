@@ -26,7 +26,7 @@
  --title-color--dark: #ffffff;
 
  /* Shapes */
-  --border-radius: 20px;
+  --border-radius: 15px;
 }
 
 body {
@@ -64,4 +64,5 @@ img {
 .bubble.small {
   margin-top: .5rem;
   width: fit-content;
+  padding: .7rem;
 }

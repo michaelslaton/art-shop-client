@@ -1,0 +1,10 @@
+.item {
+  display: inline-block;
+  margin: 0 .5em;
+  cursor: pointer;
+}
+.item-image {
+  border-radius:  var(--border-radius);
+  aspect-ratio: 1/1;
+  width: 15rem;
+}
