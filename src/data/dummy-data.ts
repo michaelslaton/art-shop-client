@@ -1,4 +1,4 @@
-import Product from "../interfaces/Product";
+import Product from "../types/Product";
 import art1 from "../assets/imgs/product (1).png";
 import art2 from "../assets/imgs/product (2).png";
 import art3 from "../assets/imgs/product (3).png";
