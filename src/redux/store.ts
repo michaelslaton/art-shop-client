@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
+import lightSliceReducer  from './slices/lightsSlice';
 
 const store = configureStore({
     reducer: {
-        // reducer: reducer, 
+        lights: lightSliceReducer,
     }
 });
 
