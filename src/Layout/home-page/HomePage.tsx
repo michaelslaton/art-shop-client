@@ -1,13 +1,11 @@
 import { useAppSelector } from "../../redux/hooks";
+import { populateRandom } from "../../utils/api/api";
 import Item from "./product/Item";
-import dummyData from "../../data/dummy-data";
 import "./home-page.css";
 
-// type HomePageProps = {
-//   lights: boolean;
-// }
+const stuff = populateRandom(4);
 
-const HomePage: React.FC/*<HomePageProps>*/ = () => {
+const HomePage: React.FC = () => {
   const lightsOn = useAppSelector((state)=>state.lights.lightsOn)
 
   return (
@@ -15,12 +13,9 @@ const HomePage: React.FC/*<HomePageProps>*/ = () => {
       <div className={`bubble ${lightsOn ? "" : "dark"}`}>
         Bubble
       </div>
-      <div className={`bubble small ${lightsOn ? "" : "dark"}`}>
-        Small Bubble
-      </div>
-      <div>
-        {dummyData.map((product)=>(
-          <Item item={product}/>
+      <div className="home-page__demo-images">
+        {stuff.map((product)=>(
+          <Item key={product.id} item={product}/>
         ))}
       </div>
     </div>
