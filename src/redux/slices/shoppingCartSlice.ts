@@ -16,8 +16,12 @@ const shoppingCart = createSlice({
     addToCart: (state, action: PayloadAction<Product>) => {
       state.cartInventory = [...state.cartInventory, action.payload];
     },
+    removeFromCart: (state, action: PayloadAction<number>) => {
+      const newState = state.cartInventory.filter((art)=> art.id !== action.payload);
+      state.cartInventory = newState;
+    }
   },
 });
 
 export default shoppingCart.reducer;
-export const { addToCart } = shoppingCart.actions;
+export const { addToCart, removeFromCart } = shoppingCart.actions;
