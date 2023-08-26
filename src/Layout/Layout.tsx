@@ -1,9 +1,8 @@
 import { useAppSelector } from "../redux/hooks";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./navbar/Navbar";
+import Header from './header/Header';
 import HomePage from "./home-page/HomePage";
 import Error404 from "../utils/error404/Error404";
-import LightSwitchButton from "./components/LightSwitchButton/LightSwitchButton";
 import "./layout.css";
 
 const Layout: React.FC = () => {
@@ -11,7 +10,7 @@ const Layout: React.FC = () => {
 
   return (
     <div className={`main-screen ${lightsOn ? "" : "dark"}`}>
-      <Navbar/>
+      <Header/>
       <div>
         <Router>
           <Routes>
@@ -20,7 +19,6 @@ const Layout: React.FC = () => {
           </Routes>
         </Router>
       </div>
-      <LightSwitchButton/>
     </div>
   );
 };

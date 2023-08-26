@@ -37,14 +37,16 @@ img {
   border-style: none;
 }
 
+h1 {
+  display: inline;
+}
+
 .main-screen {
   box-sizing: border-box;
   padding: 1rem;
   background-color: var(--bg-color--light);
   color: var(--bg-color--dark);
   font-family: "gilroy";
-  display: grid;
-  grid-template-columns: fit-content(100%) 1fr;
   min-height: 100vh;
 }
 .main-screen.dark {
