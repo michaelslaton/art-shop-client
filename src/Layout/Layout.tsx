@@ -1,6 +1,6 @@
 import { useAppSelector } from "../redux/hooks";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from './header/Header';
+import Header from "./header/Header";
 import HomePage from "./home-page/HomePage";
 import Error404 from "../utils/error404/Error404";
 import "./layout.css";

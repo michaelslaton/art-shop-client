@@ -5,7 +5,7 @@ import "./header.css";
 
 const Header: React.FC = () => {
   // const lightsOn = useAppSelector((state)=>state.lights.lightsOn)
-  const cartCount = useAppSelector((state)=>state.shoppingCart.cartInventory.length)
+  const cartCount = useAppSelector((state)=>state.shoppingCart.cartInventory.length);
 
   return (
     <div className="header__container">
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
       </div>
       <Navbar/>
     </div>
-  )
-}
+  );
+};
 
 export default Header;

@@ -1,6 +1,6 @@
 // import { useAppSelector } from "../../redux/hooks";
 import { populateRandom } from "../../utils/api/api";
-import Item from "./product/Item";
+import Item from "./item/Item";
 import "./home-page.css";
 
 const stuff = populateRandom(4);
