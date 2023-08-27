@@ -1,9 +1,9 @@
-import { useAppDispatch, useAppSelector } from '../../../redux/hooks';
-import { lightSwitch } from '../../../redux/slices/lightsSlice';
-import './lightSwitchButton.css';
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { lightSwitch } from "../../../redux/slices/lightsSlice";
+import "./lightSwitchButton.css";
 
 const LightSwitchButton: React.FC = () => {
-  const lightsOn = useAppSelector((state)=>state.lights.lightsOn)
+  const lightsOn = useAppSelector((state)=>state.lights.lightsOn);
   const dispatch = useAppDispatch();
 
   return (
@@ -13,6 +13,6 @@ const LightSwitchButton: React.FC = () => {
       </button>
     </>
   );
-}
+};
 
 export default LightSwitchButton;
