@@ -3,6 +3,10 @@ import Product from "../../types/Product";
 
 const dummyDataBase: Product[] = dummyData;
 
+/*
+  This is a false API, created to simulate data responses. This app is not connected to an API.
+*/
+
 export const populateRandom = (num: number) => {
   console.log("Database Length: ", dummyDataBase.length)
   let results: Product[] = [];
@@ -20,3 +24,15 @@ export const populateRandom = (num: number) => {
   }
   return results;
 }
+
+export const listCategories = () => {
+  let results: string[] = []
+    
+  for(let i=0;i<dummyDataBase.length;i++){
+    dummyDataBase[i].tags.forEach((tag)=>{
+      if(!results.includes(tag)) results.push(tag);
+    })
+  }
+
+  return results;
+};

@@ -10,9 +10,9 @@ const Layout: React.FC = () => {
 
   return (
     <div className={`main-screen ${lightsOn ? "" : "dark"}`}>
-      <Header/>
       <div>
         <Router>
+          <Header/>
           <Routes>
             <Route path="/" element={<HomePage/>}/>
             <Route path="*" element={<Error404/>}/>
