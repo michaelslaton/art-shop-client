@@ -55,7 +55,7 @@ h1 {
 }
 
 .bubble {
-  border-radius:  var(--border-radius);
+  border-radius: var(--border-radius);
   background-color: var(--div-color--light);
   padding: 1rem;
 }

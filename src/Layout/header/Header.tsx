@@ -1,6 +1,8 @@
 import { useAppSelector } from "../../redux/hooks";
 import LightSwitchButton from "../components/LightSwitchButton/LightSwitchButton";
-import Navbar from "../navbar/Navbar";
+import Navbar from "./navbar/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import "./header.css";
 
 const Header: React.FC = () => {
@@ -12,8 +14,7 @@ const Header: React.FC = () => {
       <div className="header__upper">
         <h1 className="header__page-title">Art Shop Title</h1>
         <div>
-          <LightSwitchButton/>
-          <p className="header__cart">Cart {cartCount}</p>
+          <p className="header__cart"><LightSwitchButton/><FontAwesomeIcon icon={faShoppingCart} /> {cartCount}</p>
         </div>
       </div>
       <Navbar/>
