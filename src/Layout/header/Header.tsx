@@ -14,7 +14,11 @@ const Header: React.FC = () => {
       <div className="header__upper">
         <h1 className="header__page-title">Art Shop Title</h1>
         <div>
-          <p className="header__cart"><LightSwitchButton/><FontAwesomeIcon icon={faShoppingCart} /> {cartCount}</p>
+          <p className="header__cart">
+            <LightSwitchButton/>
+            <FontAwesomeIcon icon={faShoppingCart} />
+            {cartCount}
+          </p>
         </div>
       </div>
       <Navbar/>

@@ -8,13 +8,10 @@ const dummyDataBase: Product[] = dummyData;
 */
 
 export const populateRandom = (num: number) => {
-  console.log("Database Length: ", dummyDataBase.length)
   let results: Product[] = [];
   let ids: number[] = [];
   while (results.length < num) {
     const random = Math.floor(Math.random() * dummyDataBase.length);
-
-    console.log(random);
 
     if(!ids.includes(dummyDataBase[random].id)) {
       results.push(dummyDataBase[random]);
@@ -32,7 +29,13 @@ export const listCategories = () => {
     dummyDataBase[i].tags.forEach((tag)=>{
       if(!results.includes(tag)) results.push(tag);
     })
-  }
+  };
 
   return results;
 };
+
+export const getCategory = (category: string) => {
+  let results: Product[] = dummyDataBase.filter((product) => product.tags.includes(category));
+
+  return results;
+}

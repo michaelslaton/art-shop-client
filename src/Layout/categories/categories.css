@@ -1,0 +1,10 @@
+.categories__title {
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+}
+
+.categories__products-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}

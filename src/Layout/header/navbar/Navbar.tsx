@@ -22,8 +22,8 @@ const Navbar: React.FC = () => {
       </NavDropdown>
       <NavDropdown title="by Catagory">
         <div className="navbar__dropdown-child--center">
-          {categories.map((category)=>(
-            <button className={`navbar__dropdown-button ${lightsOn ? "" : "dark"}`} onClick={()=>navigate(`/${category}`)}>{category}</button>
+          {categories.map((category,i)=>(
+            <button key={i} className={`navbar__dropdown-button ${lightsOn ? "" : "dark"}`} onClick={()=>navigate(`/category/${category}`)}>{category}</button>
           ))}
         </div>
       </NavDropdown>
