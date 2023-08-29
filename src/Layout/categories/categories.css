@@ -2,6 +2,7 @@
   text-align: center;
   display: block;
   text-transform: capitalize;
+  margin-bottom: 0;
 }
 
 .categories__products-wrapper {

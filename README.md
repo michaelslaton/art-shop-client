@@ -6,5 +6,6 @@ This is a portfolio project, created using React, Typescript, and using Redux fo
 * React-Router  
 * TypeScript  
 * JavaScript  
-* Redux Tool Kit  
+* HTML  
 * CSS  
+* Redux Tool Kit  
