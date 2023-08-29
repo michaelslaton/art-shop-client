@@ -2,9 +2,59 @@
   display: inline-block;
   margin: 0 .5em;
   cursor: pointer;
+  border: 1px solid transparent;
 }
+.item:hover {
+  border: 1px solid white;
+  border: 1px solid black;
+}
+.item.dark:hover {
+  border: 1px solid white;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+}
+
 .item-image {
+  display: block;
   border-radius:  var(--border-radius);
   aspect-ratio: 1/1;
   width: 15rem;
+}
+
+.item-title {
+  display: block;
+  margin: 0 auto;
+  margin-top: .5rem;
+}
+
+.item__popup--black-screen {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  filter: alpha(opacity=80);
+}
+.item__popup--content-box {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  padding: 16px;
+  background-color: white;
+  z-index:1002;
+  overflow: auto;
+  border-radius: var(--border-radius);
+  transform: translate(-50%, -50%);
+}
+.item__popup--black-screen.active, .item__popup--content-box.active {
+  display: block;
 }

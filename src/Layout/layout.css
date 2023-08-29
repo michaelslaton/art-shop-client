@@ -17,12 +17,14 @@
  --bg-color--light: #ececec;
  --div-color--light: #ffffff;
  --font-color--light: #6e6d6e;
+ --font-color--light-dark: #000000;
  --title-color--light: #26262e;
 
  /* Dark Theme */
  --bg-color--dark: #161616;
  --div-color--dark: #252525;
  --font-color--dark: #393939;
+ --font-color--dark-light: #ffffff;
  --title-color--dark: #ffffff;
 
  /* Shapes */

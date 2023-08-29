@@ -18,24 +18,24 @@
 }
 .navbar__button:hover {
   background-color: var(--div-color--dark);
-  color: white;
+  color: var(--font-color--dark-light);
 }
 .navbar__button.active {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   background-color: var(--div-color--dark);
-  color: white;
+  color: var(--font-color--dark-light);
 }
 .navbar__button.dark {
-  color: white;
+  color: var(--font-color--dark-light);
 }
 .navbar__button.dark:hover {
   background-color: var(--div-color--light);
-  color: var(--bg-color--dark);
+  color: var(--font-color--light-dark);
 }
 .navbar__button.dark.active {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   background-color: var(--div-color--light);
-  color: var(--bg-color--dark);
+  color: var(--font-color--light-dark);
 }
 
 .navbar__dropdown-child--center {
@@ -48,7 +48,7 @@
   display: block;
   background: none;
   border: none;
-  color: white;
+  color: var(--font-color--dark-light);
   text-transform: capitalize;
   border-radius: var(--border-radius);
   margin: .1em 0;
@@ -56,13 +56,13 @@
   cursor: pointer;
 }
 .navbar__dropdown-button:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--div-color--light);
+  color: var(--font-color--light-dark);
 }
 .navbar__dropdown-button.dark {
-  color: black;
+  color: var(--font-color--light-dark);
 }
 .navbar__dropdown-button.dark:hover {
-  color: white;
-  background-color: black;
+  color: var(--font-color--dark-light);
+  background-color: var(--bg-color--dark);
 }

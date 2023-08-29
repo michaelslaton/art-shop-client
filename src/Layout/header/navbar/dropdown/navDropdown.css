@@ -10,16 +10,15 @@
   background-color: var(--div-color--dark);
   padding: .3rem;
   min-width: calc(100% + 20px);
-  /* border-radius: 0 var(--border-radius) var(--border-radius); */
   border-radius: var(--border-radius);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
   opacity: 0;
   pointer-events: none;
-  color: white;
+  color: var(--font-color--dark-light);
 }
 .navbar__dropdown-menu.dark {
   background-color: var(--div-color--light);
-  color: black;
+  color: var(--font-color--light-dark);
 }
 .navbar__dropdown-menu.active {
   opacity: 1;
