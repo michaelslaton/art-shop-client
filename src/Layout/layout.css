@@ -16,15 +16,13 @@
   /* Light Theme */
  --bg-color--light: #ececec;
  --div-color--light: #ffffff;
- --font-color--light: #6e6d6e;
- --font-color--light-dark: #000000;
+ --font-color--light: #000000;
  --title-color--light: #26262e;
 
  /* Dark Theme */
  --bg-color--dark: #161616;
  --div-color--dark: #252525;
- --font-color--dark: #393939;
- --font-color--dark-light: #ffffff;
+ --font-color--dark: #ffffff;
  --title-color--dark: #ffffff;
 
  /* Shapes */
@@ -69,4 +67,18 @@ h1 {
   margin-top: .5rem;
   width: fit-content;
   padding: .7rem;
+}
+
+.button {
+  font-size: 1.1em;
+  border: 1px solid var(--bg-color--dark);
+  border-radius: var(--border-radius);
+  padding: .2rem 1rem;
+  cursor: pointer;
+  color: var(--font-color--dark);
+  background-color: var(--bg-color--dark);
+}
+.button:hover {
+  color: var(--font-color--light);
+  background-color: var(--div-color--light);
 }
