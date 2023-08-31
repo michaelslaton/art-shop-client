@@ -14,7 +14,10 @@
   margin: 0;
 }
 
-.header__cart {
+.header__cart-button {
   margin: 0;
   padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
