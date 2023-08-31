@@ -22,6 +22,7 @@ const dummyData: Product[] = [
     id: 0,
     title: "Fae City",
     artist: "",
+    price: 15.99,
     description: "A Fae City.",
     img: art1,
     tags: ["fantasy", "city"],
@@ -30,6 +31,7 @@ const dummyData: Product[] = [
     id: 1,
     title: "Strange Cat",
     artist: "",
+    price: 7.99,
     description: "A Strange Cat.",
     img: art2,
     tags: ["fantasy", "animal", "cat"]
@@ -38,6 +40,7 @@ const dummyData: Product[] = [
     id: 2,
     title: "Noble Cat",
     artist: "",
+    price: 8.99,
     description: "A Noble Cat.",
     img: art3,
     tags: ["fantasy", "animal", "cat"]
@@ -46,6 +49,7 @@ const dummyData: Product[] = [
     id: 3,
     title: "A Cat",
     artist: "",
+    price: 8.59,
     description: "A Cat.",
     img: art4,
     tags: ["animal", "cat", "surreal"]
@@ -54,6 +58,7 @@ const dummyData: Product[] = [
     id: 4,
     title: "An Orange Cat",
     artist: "",
+    price: 12.99,
     description: "An orange cat in a Fae forest.",
     img: art5,
     tags: ["fantasy", "animal", "cat"]
@@ -62,6 +67,7 @@ const dummyData: Product[] = [
     id: 5,
     title: "An Cat in Space",
     artist: "",
+    price: 4.99,
     description: "A cat in space.",
     img: art6,
     tags: ["sci-fi", "animal", "cat", "surreal"]
@@ -70,6 +76,7 @@ const dummyData: Product[] = [
     id: 6,
     title: "Alien Lizard",
     artist: "",
+    price: 8.99,
     description: "An alien lizard on a strange planet.",
     img: art7,
     tags: ["sci-fi", "animal", "lizard"]
@@ -78,6 +85,7 @@ const dummyData: Product[] = [
     id: 7,
     title: "A large eyed Alien Lizard",
     artist: "",
+    price: 5.99,
     description: "An alien lizard with large green eyes.",
     img: art8,
     tags: ["surreal", "animal", "lizard"]
@@ -86,6 +94,7 @@ const dummyData: Product[] = [
     id: 8,
     title: "Small lizard",
     artist: "",
+    price: 9.99,
     description: "A small lizard.",
     img: art9,
     tags: ["surreal", "animal", "lizard"]
@@ -94,6 +103,7 @@ const dummyData: Product[] = [
     id: 9,
     title: "Best lizard",
     artist: "",
+    price: 99.99,
     description: "A lizard.",
     img: art10,
     tags: ["surreal", "animal", "lizard"]
@@ -102,6 +112,7 @@ const dummyData: Product[] = [
     id: 10,
     title: "Alien City",
     artist: "",
+    price: 2.99,
     description: "An alien city.",
     img: art11,
     tags: ["sci-fi", "city"]
@@ -110,6 +121,7 @@ const dummyData: Product[] = [
     id: 11,
     title: "Alien World",
     artist: "",
+    price: 4.99,
     description: "An alien city on an alien world.",
     img: art12,
     tags: ["sci-fi", "city"]
@@ -118,6 +130,7 @@ const dummyData: Product[] = [
     id: 12,
     title: "Alien Metropolis",
     artist: "",
+    price: 7.99,
     description: "An alien metropolis.",
     img: art13,
     tags: ["sci-fi", "city"]
@@ -126,6 +139,7 @@ const dummyData: Product[] = [
     id: 13,
     title: "Alien Holy City",
     artist: "",
+    price: 10.99,
     description: "An alien holy city.",
     img: art14,
     tags: ["sci-fi", "city"]
@@ -134,6 +148,7 @@ const dummyData: Product[] = [
     id: 14,
     title: "Alien cityscape",
     artist: "",
+    price: 4.99,
     description: "An alien cityscape on an alien world.",
     img: art15,
     tags: ["sci-fi", "city"]
@@ -142,6 +157,7 @@ const dummyData: Product[] = [
     id: 15,
     title: "A snowflake",
     artist: "",
+    price: 20.99,
     description: "A surreal, macro snowflake.",
     img: art16,
     tags: ["surreal", "snowflake", "macro"]
@@ -150,6 +166,7 @@ const dummyData: Product[] = [
     id: 16,
     title: "Snowflake on fire",
     artist: "",
+    price: 13.99,
     description: "A blazing snowflake.",
     img: art17,
     tags: ["surreal", "snowflake", "macro"]
