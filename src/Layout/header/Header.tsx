@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { useAppSelector } from "../../redux/hooks";
 import LightSwitchButton from "../components/LightSwitchButton/LightSwitchButton";
 import Navbar from "./navbar/Navbar";
@@ -6,19 +7,21 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import "./header.css";
 
 const Header: React.FC = () => {
-  // const lightsOn = useAppSelector((state)=>state.lights.lightsOn)
-  const cartCount = useAppSelector((state)=>state.shoppingCart.cartInventory.length);
+  const navigate: Function = useNavigate();
+  const cartCount: number = useAppSelector((state)=>state.shoppingCart.cartInventory.length);
 
   return (
     <div className="header__container">
       <div className="header__upper">
         <h1 className="header__page-title">Art Shop Title</h1>
         <div>
-          <p className="header__cart">
+          <div>
             <LightSwitchButton/>
-            <FontAwesomeIcon icon={faShoppingCart} />
-            {cartCount}
-          </p>
+            <button className="header__cart-button" onClick={()=>navigate("/shoppingcart")}>
+              <FontAwesomeIcon icon={faShoppingCart} />
+              {cartCount}
+            </button>
+          </div>
         </div>
       </div>
       <Navbar/>
