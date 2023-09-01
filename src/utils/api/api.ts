@@ -23,7 +23,7 @@ export const populateRandom = (num: number) => {
 }
 
 export const listCategories = () => {
-  let results: string[] = []
+  let results: string[] = [];
     
   for(let i=0;i<dummyDataBase.length;i++){
     dummyDataBase[i].tags.forEach((tag)=>{

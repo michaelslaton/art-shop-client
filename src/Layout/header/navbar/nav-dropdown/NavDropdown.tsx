@@ -9,7 +9,7 @@ type NavDropdownProps = {
 
 const NavDropdown: React.FC<NavDropdownProps> = ({ children, title }) => {
   const [isHovering, setIsHovering] = useState<boolean>(false);
-  const lightsOn = useAppSelector((state)=>state.lights.lightsOn);
+  const lightsOn: boolean = useAppSelector((state)=>state.lights.lightsOn);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

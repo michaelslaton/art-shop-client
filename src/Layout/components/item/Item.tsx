@@ -10,7 +10,7 @@ type ItemProps = {
 
 const Item: React.FC<ItemProps> = ({ item }) => {
   const [popup, setPopup] = useState<boolean>(false);
-  const lightsOn = useAppSelector((state)=>state.lights.lightsOn);
+  const lightsOn: boolean = useAppSelector((state)=>state.lights.lightsOn);
 
   return (
     <>

@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
 import { getCategory } from "../../utils/api/api";
+import Product from "../../types/Product";
 import Item from "../components/item/Item";
 import "./categories.css";
 
 const Categories: React.FC = () => {
   const { category } = useParams();
-  const categoryProducts = getCategory(category!);
+  const categoryProducts: Product[] = getCategory(category!);
 
   return (
     <>

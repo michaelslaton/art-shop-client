@@ -1,5 +1,30 @@
+.cart__item-grid {
+  display: grid;
+  grid-template-columns: fit-content(1rem)  fit-content(1rem) 1fr fit-content(1rem);
+  align-items: center;
+}
+
 .cart__item-image {
+  display: block;
   aspect-ratio: 1/1;
   height: 5rem;
   border-radius: var(--border-radius);
+}
+
+.cart__item-delete-button:hover {
+  background-color: red !important;
+}
+.cart__item-delete-button.dark:hover {
+  border-color: red;
+  color: var(--font-color--light) !important;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--font-color--light);
+  width: 95%;
+  margin: .5rem auto;
+}
+.divider.dark {
+  background-color: var(--font-color--dark);
 }
