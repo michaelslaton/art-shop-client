@@ -3,7 +3,7 @@ import { lightSwitch } from "../../../redux/slices/lightsSlice";
 import "./lightSwitchButton.css";
 
 const LightSwitchButton: React.FC = () => {
-  const lightsOn = useAppSelector((state)=>state.lights.lightsOn);
+  const lightsOn: boolean = useAppSelector((state)=>state.lights.lightsOn);
   const dispatch = useAppDispatch();
 
   return (

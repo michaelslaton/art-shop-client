@@ -80,5 +80,15 @@ h1 {
 }
 .button:hover {
   color: var(--font-color--light);
+  border-color: var(--bg-color--dark);
   background-color: var(--div-color--light);
+}
+.button.dark {
+  color: var(--font-color--light);
+  border-color: var(--div-color--light);
+  background-color: var(--div-color--light);
+}
+.button.dark:hover {
+  color: var(--font-color--dark);
+  background-color: var(--div-color--dark);
 }

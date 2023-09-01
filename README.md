@@ -9,3 +9,4 @@ This is a portfolio project, created using React, Typescript, and using Redux fo
 * HTML  
 * CSS  
 * Redux Tool Kit  
+  - Redux-Persist  

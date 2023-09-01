@@ -1,13 +1,13 @@
-import { useNavigate } from "react-router-dom";
+import { NavigateFunction, useNavigate } from "react-router-dom";
 import { useAppSelector } from "../../../redux/hooks";
 import { listCategories } from "../../../utils/api/api";
 import NavDropdown from "./nav-dropdown/NavDropdown";
 import "./navbar.css";
 
 const Navbar: React.FC = () => {
-  const lightsOn = useAppSelector((state)=>state.lights.lightsOn)
-  const categories = listCategories();
-  const navigate = useNavigate();
+  const lightsOn: boolean = useAppSelector((state)=>state.lights.lightsOn)
+  const categories: string[] = listCategories();
+  const navigate: NavigateFunction = useNavigate();
 
 
   return (

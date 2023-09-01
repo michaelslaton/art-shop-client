@@ -20,4 +20,8 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: var(--font-color--light)
+}
+.header__cart-button.dark {
+  color: var(--font-color--dark)
 }
