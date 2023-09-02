@@ -1,10 +1,10 @@
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { removeFromCart } from "../../redux/slices/shoppingCartSlice";
-import Product from "../../types/Product";
+import { CartProduct } from "../../redux/slices/shoppingCartSlice";
 import "./shoppingCart.css"
 
 type ShoppingCartItemProps = {
-  item: Product;
+  item: CartProduct;
 }
 
 const ShoppingCartItem: React.FC<ShoppingCartItemProps> = ({ item }) => {
@@ -20,6 +20,7 @@ const ShoppingCartItem: React.FC<ShoppingCartItemProps> = ({ item }) => {
         <img className="cart__item-image" src={item.img} alt={item.title}/>
 
         <div>
+          Quantity: {item.quantity}
         </div>
 
         <button 

@@ -1,15 +1,17 @@
 import { NavigateFunction, useNavigate } from "react-router-dom";
 import { useAppSelector } from "../../redux/hooks";
+import { CartProduct } from "../../redux/slices/shoppingCartSlice";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import LightSwitchButton from "../components/LightSwitchButton/LightSwitchButton";
 import Navbar from "./navbar/Navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import "./header.css";
 
 const Header: React.FC = () => {
   const navigate: NavigateFunction = useNavigate();
-  const cartCount: number = useAppSelector((state)=> state.shoppingCart.cartInventory.length);
+  const cart: CartProduct[] = useAppSelector((state)=> state.shoppingCart.cartInventory);
   const lightsOn: boolean = useAppSelector((state)=> state.lights.lightsOn);
+  const cartCount: number = cart.reduce((a,b)=> a + b.quantity, 0);
 
   return (
     <div className="header__container">
