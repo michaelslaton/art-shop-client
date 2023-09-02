@@ -3,7 +3,7 @@ This is a portfolio project, created using React, Typescript, and using Redux fo
   
 ### Technologies  
 * React  
-* React-Router  
+  - React-Router  
 * TypeScript  
 * JavaScript  
 * HTML  
