@@ -17,8 +17,8 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ children, title }) => {
         if(!dropdownRef.current?.contains(event.target as HTMLInputElement)) setIsHovering(false);
       };
 
-      window.addEventListener('click', handler);
-      return () => window.removeEventListener('click', handler);
+      window.addEventListener("click", handler);
+      return () => window.removeEventListener("click", handler);
   }, []);
 
   return (

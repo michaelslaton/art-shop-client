@@ -11,8 +11,8 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <div className={`navbar__container bubble ${lightsOn ? "" : "dark"}`}>
-      <button className={`navbar__button ${lightsOn ? "" : "dark"}`} onClick={()=> navigate("/")}>Home</button>
+    <div className={`navbar__container bubble ${lightsOn ? "" : "dark" }`}>
+      <button className={`navbar__button ${lightsOn ? "" : "dark" }`} onClick={()=> navigate("/")}>Home</button>
       <NavDropdown title="by Artist">
         <div className="navbar__dropdown-child--center">
           Heres a Link: Link!!!<br/>

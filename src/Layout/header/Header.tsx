@@ -2,7 +2,7 @@ import { NavigateFunction, useNavigate } from "react-router-dom";
 import { useAppSelector } from "../../redux/hooks";
 import { CartProduct } from "../../redux/slices/shoppingCartSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import LightSwitchButton from "../components/LightSwitchButton/LightSwitchButton";
 import Navbar from "./navbar/Navbar";
 import "./header.css";

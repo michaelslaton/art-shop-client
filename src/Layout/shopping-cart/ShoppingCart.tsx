@@ -5,8 +5,8 @@ import { CartProduct } from "../../redux/slices/shoppingCartSlice";
 import "./shoppingCart.css";
 
 const ShoppingCart: React.FC = () => {
-  const cart: CartProduct[] = useAppSelector((state)=> state.shoppingCart.cartInventory);
-  const lightsOn: boolean = useAppSelector((state)=> state.lights.lightsOn);
+  const cart: CartProduct[] = useAppSelector((state)=> state.shoppingCart.cartInventory );
+  const lightsOn: boolean = useAppSelector((state)=> state.lights.lightsOn );
   const dispatch = useAppDispatch();
 
   return (
