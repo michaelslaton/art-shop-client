@@ -1,14 +1,14 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import { persistReducer } from "redux-persist";
-import lightSliceReducer  from './slices/lightsSlice';
-import artControlReducer from './slices/artControlSlice';
-import shoppingCartReducer from './slices/shoppingCartSlice';
-import storage from 'redux-persist/lib/storage';
+import lightSliceReducer  from "./slices/lightsSlice";
+import artControlReducer from "./slices/artControlSlice";
+import shoppingCartReducer from "./slices/shoppingCartSlice";
+import storage from "redux-persist/lib/storage";
 
 const persistConfig = {
     key: "root",
     storage,
-    blacklist: ['artControl'],
+    blacklist: ["artControl"],
 };
 
 const reducer = combineReducers({

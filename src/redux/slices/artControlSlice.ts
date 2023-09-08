@@ -6,7 +6,7 @@ type InitialState = Product[];
 const initialState: InitialState = [];
 
 const artControl = createSlice({
-  name: 'artControl',
+  name: "artControl",
   initialState,
   reducers: {
   },

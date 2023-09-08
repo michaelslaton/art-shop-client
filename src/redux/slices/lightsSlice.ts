@@ -9,7 +9,7 @@ const initialState: InitialState = {
 }
 
 const lightsSlice = createSlice({
-  name: 'lights',
+  name: "lights",
   initialState,
   reducers: {
     lightSwitch: (state) => {
