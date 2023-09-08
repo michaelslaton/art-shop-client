@@ -32,7 +32,7 @@ const ShoppingCartItem: React.FC<ShoppingCartItemProps> = ({ item }) => {
       </div>
       <div className={`divider ${ lightsOn ? "" : "dark" }`}/>
     </>
-  )
+  );
 };
 
 export default ShoppingCartItem;
