@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { removeFromCart } from "../../redux/slices/shoppingCartSlice";
 import { CartProduct } from "../../redux/slices/shoppingCartSlice";
@@ -10,12 +11,13 @@ type ShoppingCartItemProps = {
 const ShoppingCartItem: React.FC<ShoppingCartItemProps> = ({ item }) => {
   const lightsOn: boolean = useAppSelector((state)=> state.lights.lightsOn);
   const dispatch = useAppDispatch();
+  const checkBoxRef = useRef(null);
 
   return (
     <>
       <div className="cart__item-grid">
 
-        <input type="checkbox"/>
+        <input type="checkbox" ref={checkBoxRef}/>
 
         <img className="cart__item-image" src={item.img} alt={item.title}/>
 

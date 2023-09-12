@@ -1,3 +1,14 @@
+.cart__items-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.cart__buttons-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .cart__item-grid {
   display: grid;
   grid-template-columns: fit-content(1rem)  fit-content(1rem) 1fr fit-content(1rem);
