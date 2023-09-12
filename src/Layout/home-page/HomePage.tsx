@@ -1,8 +1,9 @@
 import { populateRandom } from "../../utils/api/api";
+import Product from "../../types/Product";
 import Item from "../components/item/Item";
 import "./home-page.css";
 
-const stuff = populateRandom(4);
+const stuff: Product[] = populateRandom(4);
 
 const HomePage: React.FC = () => {
 

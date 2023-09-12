@@ -9,14 +9,24 @@ const ShoppingCart: React.FC = () => {
   const lightsOn: boolean = useAppSelector((state)=> state.lights.lightsOn );
   const dispatch = useAppDispatch();
 
+  const emptyCartHandler = (): void => {
+    if (window.confirm("Are you sure you want to clear your cart?") === true) dispatch(emptyCart());
+  };
+
   return (
     <>
-      {cart.map((item, i)=>(
-        <ShoppingCartItem key={i} item={item}/>
-      ))}
-      <button
-        className={`button ${ lightsOn ? "" : "dark" }`}
-        onClick={()=> dispatch(emptyCart())}>Clear Cart</button>
+      <div className="cart__items-wrapper">
+        {cart.map((item, i)=>(
+          <ShoppingCartItem key={i} item={item}/>
+        ))}
+        <div className="cart__buttons-wrapper">
+          <button
+            className={`button ${ lightsOn ? "" : "dark" }`}
+            onClick={()=> emptyCartHandler()}>
+            Clear Cart
+          </button>
+        </div>
+      </div>
     </>
   );
 };
