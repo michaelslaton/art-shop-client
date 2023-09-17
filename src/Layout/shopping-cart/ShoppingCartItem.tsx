@@ -11,7 +11,8 @@ type ShoppingCartItemProps = {
 const ShoppingCartItem: React.FC<ShoppingCartItemProps> = ({ item }) => {
   const lightsOn: boolean = useAppSelector((state)=> state.lights.lightsOn);
   const dispatch = useAppDispatch();
-  const checkBoxRef = useRef(null);
+  const checkBoxRef = useRef<HTMLInputElement>(null);
+  const moneyFormat: Intl.NumberFormat = new Intl.NumberFormat("en-us", { currency: "USD" });
 
   return (
     <>
@@ -21,12 +22,15 @@ const ShoppingCartItem: React.FC<ShoppingCartItemProps> = ({ item }) => {
 
         <img className="cart__item-image" src={item.img} alt={item.title}/>
 
+        <h3>{item.title}</h3>
+
         <div>
-          Quantity: {item.quantity}
+          <div> Quantity: {item.quantity} </div>
+          <div>$ {moneyFormat.format(item.price)} </div>
         </div>
 
         <button 
-          className={`button cart__item-delete-button ${ lightsOn ? "" : "dark" }`}
+          className={`button cart__item--delete-button ${ lightsOn ? "" : "dark" }`}
           onClick={()=> dispatch(removeFromCart(item.id))}>
             Remove
         </button>

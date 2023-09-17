@@ -92,3 +92,13 @@ h1 {
   color: var(--font-color--dark);
   background-color: var(--div-color--dark);
 }
+
+.divider {
+  height: 1px;
+  background-color: var(--font-color--light);
+  width: 95%;
+  margin: .5rem auto;
+}
+.divider.dark {
+  background-color: var(--font-color--dark);
+}
