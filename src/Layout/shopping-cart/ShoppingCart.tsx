@@ -36,6 +36,11 @@ const ShoppingCart: React.FC = () => {
             <div className="cart__buttons-wrapper">
               <button
                 className={`button ${ lightsOn ? "" : "dark" }`}
+                onClick={()=>{}}>
+                Checkout
+              </button>
+              <button
+                className={`button ${ lightsOn ? "" : "dark" }`}
                 onClick={()=> emptyCartHandler()}>
                 Clear Cart
               </button>
