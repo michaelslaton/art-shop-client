@@ -17,10 +17,10 @@ const reducer = combineReducers({
     shoppingCart: shoppingCartReducer,
 });
 
-// const persistedReducer = persistReducer(persistConfig, reducer);
+const persistedReducer = persistReducer(persistConfig, reducer);
 
 const store = configureStore({
-    reducer: reducer,
+    reducer: persistedReducer,
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({
       serializableCheck: false,
     }),

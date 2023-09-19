@@ -30,6 +30,7 @@
 .cart__total {
   text-align: end;
   margin-right: 6.5rem;
+  margin-bottom: .5rem;
 }
 
 .cart__item--delete-button {
