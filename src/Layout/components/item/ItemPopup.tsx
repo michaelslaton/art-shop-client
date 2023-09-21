@@ -20,6 +20,7 @@ const ItemPopup: React.FC<ItemPopupProps> = ({ item, popup, setPopup }) => {
         <div className="item__popup--grid">
           <img className="item__popup--image" src={item.img} alt={item.title} />
           <div className="item__popup--info">
+
             <div className="item__popup--info-top">
               <h2 className="item__popup--title">{item.title}</h2>
               <button
@@ -28,8 +29,11 @@ const ItemPopup: React.FC<ItemPopupProps> = ({ item, popup, setPopup }) => {
                 X
               </button>
             </div>
-            <div>{`$${item.price}`}</div>
+
+            <section className="item__popup--price">{`$${item.price}`}</section>
+
             <article>{item.description}</article>
+
             <div className="item__popup--info-bottom">
               <button
                 className="button"
@@ -40,6 +44,7 @@ const ItemPopup: React.FC<ItemPopupProps> = ({ item, popup, setPopup }) => {
                 Add to Cart
               </button>
             </div>
+
           </div>
         </div>
       </div>
