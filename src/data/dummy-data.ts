@@ -17,13 +17,15 @@ import art15 from "../assets/imgs/product (15).png";
 import art16 from "../assets/imgs/product (16).png";
 import art17 from "../assets/imgs/product (17).png";
 
+const lorem: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
 const dummyData: Product[] = [
   {
     id: 0,
     title: "Fae City",
     artist: "",
     price: 15.99,
-    description: "A Fae City.",
+    description: "A Fae City. " + lorem,
     img: art1,
     tags: ["fantasy", "city"],
   },
@@ -32,7 +34,7 @@ const dummyData: Product[] = [
     title: "Strange Cat",
     artist: "",
     price: 7.99,
-    description: "A Strange Cat.",
+    description: "A Strange Cat. " + lorem,
     img: art2,
     tags: ["fantasy", "animal", "cat"]
   },
@@ -41,7 +43,7 @@ const dummyData: Product[] = [
     title: "Noble Cat",
     artist: "",
     price: 8.99,
-    description: "A Noble Cat.",
+    description: "A Noble Cat. " + lorem,
     img: art3,
     tags: ["fantasy", "animal", "cat"]
   },
@@ -50,7 +52,7 @@ const dummyData: Product[] = [
     title: "A Cat",
     artist: "",
     price: 8.59,
-    description: "A Cat.",
+    description: "A Cat. " + lorem,
     img: art4,
     tags: ["animal", "cat", "surreal"]
   },
@@ -59,7 +61,7 @@ const dummyData: Product[] = [
     title: "An Orange Cat",
     artist: "",
     price: 12.99,
-    description: "An orange cat in a Fae forest.",
+    description: "An orange cat in a Fae forest. " + lorem,
     img: art5,
     tags: ["fantasy", "animal", "cat"]
   },
@@ -68,7 +70,7 @@ const dummyData: Product[] = [
     title: "An Cat in Space",
     artist: "",
     price: 4.99,
-    description: "A cat in space.",
+    description: "A cat in space. " + lorem,
     img: art6,
     tags: ["sci-fi", "animal", "cat", "surreal"]
   },
@@ -77,7 +79,7 @@ const dummyData: Product[] = [
     title: "Alien Lizard",
     artist: "",
     price: 8.99,
-    description: "An alien lizard on a strange planet.",
+    description: "An alien lizard on a strange planet. " + lorem,
     img: art7,
     tags: ["sci-fi", "animal", "lizard"]
   },
@@ -86,7 +88,7 @@ const dummyData: Product[] = [
     title: "A large eyed Alien Lizard",
     artist: "",
     price: 5.99,
-    description: "An alien lizard with large green eyes.",
+    description: "An alien lizard with large green eyes. " + lorem,
     img: art8,
     tags: ["surreal", "animal", "lizard"]
   },
@@ -95,7 +97,7 @@ const dummyData: Product[] = [
     title: "Small lizard",
     artist: "",
     price: 9.99,
-    description: "A small lizard.",
+    description: "A small lizard. " + lorem,
     img: art9,
     tags: ["surreal", "animal", "lizard"]
   },
@@ -104,7 +106,7 @@ const dummyData: Product[] = [
     title: "Best lizard",
     artist: "",
     price: 99.99,
-    description: "A lizard.",
+    description: "A lizard. " + lorem,
     img: art10,
     tags: ["surreal", "animal", "lizard"]
   },
@@ -113,7 +115,7 @@ const dummyData: Product[] = [
     title: "Alien City",
     artist: "",
     price: 2.99,
-    description: "An alien city.",
+    description: "An alien city. " + lorem,
     img: art11,
     tags: ["sci-fi", "city"]
   },
@@ -122,7 +124,7 @@ const dummyData: Product[] = [
     title: "Alien World",
     artist: "",
     price: 4.99,
-    description: "An alien city on an alien world.",
+    description: "An alien city on an alien world. " + lorem,
     img: art12,
     tags: ["sci-fi", "city"]
   },
@@ -131,7 +133,7 @@ const dummyData: Product[] = [
     title: "Alien Metropolis",
     artist: "",
     price: 7.99,
-    description: "An alien metropolis.",
+    description: "An alien metropolis. " + lorem,
     img: art13,
     tags: ["sci-fi", "city"]
   },
@@ -140,7 +142,7 @@ const dummyData: Product[] = [
     title: "Alien Holy City",
     artist: "",
     price: 10.99,
-    description: "An alien holy city.",
+    description: "An alien holy city. " + lorem,
     img: art14,
     tags: ["sci-fi", "city"]
   },
@@ -149,7 +151,7 @@ const dummyData: Product[] = [
     title: "Alien cityscape",
     artist: "",
     price: 4.99,
-    description: "An alien cityscape on an alien world.",
+    description: "An alien cityscape on an alien world. " + lorem,
     img: art15,
     tags: ["sci-fi", "city"]
   },
@@ -158,7 +160,7 @@ const dummyData: Product[] = [
     title: "A snowflake",
     artist: "",
     price: 20.99,
-    description: "A surreal, macro snowflake.",
+    description: "A surreal, macro snowflake. " + lorem,
     img: art16,
     tags: ["surreal", "snowflake", "macro"]
   },
@@ -167,7 +169,7 @@ const dummyData: Product[] = [
     title: "Snowflake on fire",
     artist: "",
     price: 13.99,
-    description: "A blazing snowflake.",
+    description: "A blazing snowflake. " + lorem,
     img: art17,
     tags: ["surreal", "snowflake", "macro"]
   },

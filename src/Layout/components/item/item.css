@@ -82,16 +82,17 @@
 
 .item__popup--grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2,fit-content(30rem));
 }
 .item__popup--info {
-  margin-left: .6rem;
+  margin-left: 1rem;
 }
 .item__popup--info-top {
   display: flex;
   justify-content: space-between;
 }
 .item__popup--info-bottom {
+  margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -106,6 +107,12 @@
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+.item__popup--price {
+  font-size: 1.3rem;
+  margin: .5rem 0;
+  margin-left: 1.5rem;
+}
 .item__popup--info > article {
   margin-left: 1.5rem;
+  margin-top: 2rem;
 }
