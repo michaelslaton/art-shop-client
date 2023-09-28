@@ -1,6 +1,7 @@
 .navbar__dropdown {
   position: relative;
   min-width: fit-content;
+  z-index: 2;
 }
 .navbar__dropdown-menu {
   position: absolute;
