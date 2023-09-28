@@ -14,20 +14,47 @@
 
 .item-grid {
   display: grid;
-  grid-template-rows: repeat(2,auto);
+  grid-template-columns: fit-content(1rem);
+}
+.item-images-wrapper {
+  position: relative;
+  margin-bottom: .8rem;
 }
 .item-image {
+  position: relative;
   display: block;
   border-radius:  var(--border-radius);
   aspect-ratio: 1/1;
   width: 15rem;
   margin: 0 auto;
 }
+.item-artist-image {
+  aspect-ratio: 1/1;
+  width: 4rem;
+  border-radius: var(--border-radius);
+  position: absolute;
+  margin: .2em;
+  border: .2em solid;
+  border-color: var(--div-color--light);
+  bottom: -1.3rem;
+}
+.item-artist-image.dark {
+  border-color: var(--div-color--dark);
+}
+.item-artist-image:hover {
+  border-color: var(--div-color--dark);
+}
+.item-artist-image.dark:hover {
+  border-color: var(--div-color--light);
+}
 
 .item-title {
   display: block;
   margin: 0 auto;
   margin-top: .5rem;
+  word-wrap: break-word;
+  white-space: normal;
+  font-size: 1.25rem;
 }
 
 .item__popup--black-screen {

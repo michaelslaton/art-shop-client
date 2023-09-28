@@ -1,7 +1,9 @@
+import Artist from "./Artist";
+
 type Product = {
   id: number;
   title: string;
-  artist: string;
+  artist: Artist;
   price: number;
   description: string;
   img: string;

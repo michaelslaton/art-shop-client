@@ -1,7 +1,15 @@
-import dummyData from "../../data/dummy-data";
+import dummyArtData from "../../data/dummy-art-data";
+import dummyArtistData from "../../data/dummy-artist-data";
+import Artist from "../../types/Artist";
 import Product from "../../types/Product";
 
-const dummyDataBase: Product[] = dummyData;
+const dummyArtDataBase: Product[] = dummyArtData;
+const dummyArtistDataBase: Artist[] = dummyArtistData;
+
+type artistListData = {
+  name: string;
+  id: number;
+}
 
 /*
   This is a false API, created to simulate data responses. This app is not connected to an API.
@@ -11,11 +19,11 @@ export const populateRandom = (num: number) => {
   let results: Product[] = [];
   let ids: number[] = [];
   while (results.length < num) {
-    const random = Math.floor(Math.random() * dummyDataBase.length);
+    const random = Math.floor(Math.random() * dummyArtDataBase.length);
 
-    if(!ids.includes(dummyDataBase[random].id)) {
-      results.push(dummyDataBase[random]);
-      ids.push(dummyDataBase[random].id);
+    if(!ids.includes(dummyArtDataBase[random].id)) {
+      results.push(dummyArtDataBase[random]);
+      ids.push(dummyArtDataBase[random].id);
     }
     else continue;
   }
@@ -25,8 +33,8 @@ export const populateRandom = (num: number) => {
 export const listCategories = () => {
   let results: string[] = [];
     
-  for(let i=0;i<dummyDataBase.length;i++){
-    dummyDataBase[i].tags.forEach((tag)=>{
+  for(let i=0;i<dummyArtDataBase.length;i++){
+    dummyArtDataBase[i].tags.forEach((tag)=>{
       if(!results.includes(tag)) results.push(tag);
     })
   };
@@ -34,8 +42,17 @@ export const listCategories = () => {
   return results;
 };
 
+export const listArtists = () => {
+  let results: artistListData[] = [];
+
+  dummyArtistDataBase.forEach((artist)=> results.push({ name: artist.name, id: artist.id }));
+  console.log(results)
+
+  return results;
+};
+
 export const getCategory = (category: string) => {
-  let results: Product[] = dummyDataBase.filter((product) => product.tags.includes(category));
+  let results: Product[] = dummyArtDataBase.filter((product) => product.tags.includes(category));
 
   return results;
 }
