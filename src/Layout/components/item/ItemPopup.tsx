@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { useAppSelector, useAppDispatch } from "../../../redux/hooks";
 import { addToCart } from "../../../redux/slices/shoppingCartSlice";
 import Product from "../../../types/Product";
@@ -12,13 +13,19 @@ type ItemPopupProps = {
 const ItemPopup: React.FC<ItemPopupProps> = ({ item, popup, setPopup }) => {
   const lightsOn: boolean = useAppSelector((state)=>state.lights.lightsOn);
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
 
   return (
     <>
       <div
         className={`item__popup  ${popup ? "active" : ""} ${ lightsOn ? "" : "dark" }`}>
         <div className="item__popup--grid">
-          <img className="item__popup--image" src={item.img} alt={item.title} />
+
+          <div className="item-popup__images-wrapper">
+            <img className={`item-popup__artist-image ${lightsOn ? "" : "dark"}`} src={item.artist.img} onClick={()=>navigate(`/artist/${item.artist.id}`)} alt={item.artist.name}/>
+            <img className="item__popup--image" src={item.img} alt={item.title} />
+          </div>
+          
           <div className="item__popup--info">
 
             <div className="item__popup--info-top">
