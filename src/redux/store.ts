@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import { persistReducer } from "redux-persist";
+import { persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from "redux-persist";
 import lightSliceReducer  from "./slices/lightsSlice";
 import artControlReducer from "./slices/artControlSlice";
 import shoppingCartReducer from "./slices/shoppingCartSlice";
@@ -22,7 +22,9 @@ const persistedReducer = persistReducer(persistConfig, reducer);
 const store = configureStore({
     reducer: persistedReducer,
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-      serializableCheck: false,
+        serializableCheck: {
+            ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+            },
     }),
 });
 
